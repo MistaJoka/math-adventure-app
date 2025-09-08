@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Math Adventure</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div class="logo">
+        <img src="assets/brain.svg" alt="" width="36" height="36"/>
+        <div>
+          <h1>Math Adventure</h1>
+          <p>Earn rewards and play games as you master new skills.</p>
+        </div>
+      </div>
+      <nav class="pill-grid" id="modeTabs" role="tablist" aria-label="Modes">
+        <button class="pill active" data-mode="practice">🧮 Practice</button>
+        <button class="pill" data-mode="flash">⚡ Flash Match</button>
+        <button class="pill" data-mode="list">📘 Problem List</button>
+        <button class="pill" data-mode="story">📖 Word Story</button>
+      </nav>
+    </header>
+
+    <section id="practice" class="card">
+      <h2 class="card-title"><img src="assets/speaker.svg" class="icon" alt=""/> Solve &amp; Type</h2>
+      <p class="muted">Solve the problem. Get <span id="unlockTarget">7</span> correct to unlock the Flash Match game!</p>
+
+      <div class="btn-row">
+        <button id="btn-new" class="btn primary">New Problem</button>
+        <button id="btn-say" class="btn">Read Problem</button>
+      </div>
+
+      <label class="input">
+        <input id="answer" type="text" aria-label="Type your answer here" placeholder="Type your answer here"/>
+      </label>
+
+      <button id="btn-check" class="btn success lg">Check Answer</button>
+      <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="stats" class="card">
+      <h2 class="card-title">Adventure Stats</h2>
+      <div class="stat">
+        <span>Correct to Next Game:</span>
+        <strong id="progress">0/7</strong>
+      </div>
+      <div class="stat">
+        <span>Total Problems Loaded:</span>
+        <a href="#" id="totalProblems" class="link">0</a>
+      </div>
+      <div class="btn-row">
+        <button id="btn-reset-progress" class="btn">Reset Progress</button>
+        <button id="btn-reset-problems" class="btn danger">Reset Problems</button>
+      </div>
+    </section>
+
+    <section id="flash" class="card hidden" aria-hidden="true">
+      <h2 class="card-title">⚡ Flash Match</h2>
+      <p class="muted">Match each expression to its answer before time runs out.</p>
+      <div id="flashGrid" class="grid"></div>
+      <div class="btn-row"><button id="btn-flash-new" class="btn primary">New Round</button></div>
+    </section>
+
+    <footer class="footer">
+      <small>Built for ages 9–12 • Accessible • Works offline • MIT</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

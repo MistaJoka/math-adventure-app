@@ -1,0 +1,35 @@
+/* Minimal, dependency-free utility-ish styles */
+:root{
+  --bg:#f4f6f8; --card:#ffffff; --muted:#6b7280; --text:#0f172a;
+  --accent:#7c3aed; --accent-2:#10b981; --danger:#ef4444; --shadow:0 12px 30px rgba(16,24,40,.08);
+  --radius:20px;
+}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,Segoe UI,Roboto,Arial}
+.container{max-width:820px;margin:40px auto;padding:0 20px}
+.header{display:flex;flex-direction:column;gap:16px;margin-bottom:16px}
+.logo{display:flex;gap:12px;align-items:center}
+.logo h1{margin:0;font-size:28px} .logo p{margin:0;color:var(--muted)}
+.pill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.pill{border:none;border-radius:999px;padding:10px 14px;background:#eef2ff;color:#4338ca;cursor:pointer}
+.pill.active{background:#fce7f3;color:#be185d}
+.card{background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);margin:16px 0}
+.card-title{margin:0 0 8px 0;display:flex;align-items:center;gap:8px}
+.icon{width:20px;height:20px}
+.muted{color:var(--muted)}
+.input{display:block;margin:16px 0}
+.input input{width:100%;padding:14px 16px;border:1px solid #e5e7eb;border-radius:12px;outline:none}
+.btn{border:none;border-radius:999px;padding:10px 16px;background:#e5e7eb;cursor:pointer}
+.btn.primary{background:#e9d5ff;color:#6d28d9}
+.btn.success{background:#d1fae5;color:#065f46}
+.btn.danger{background:#fee2e2;color:#991b1b}
+.btn.lg{font-size:18px;padding:14px 24px;margin-top:6px}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0}
+.stat{display:flex;justify-content:space-between;align-items:center;background:#f8fafc;padding:12px 14px;border-radius:12px;margin:10px 0}
+.feedback{min-height:24px;margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.tile{background:#f1f5f9;border-radius:12px;padding:12px;text-align:center;cursor:pointer;user-select:none}
+.tile.matched{background:#dcfce7}
+.hidden{display:none}
+.footer{color:var(--muted);text-align:center;margin:16px 0}
+.link{color:#2563eb;text-decoration:none}
+@media (max-width:600px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}

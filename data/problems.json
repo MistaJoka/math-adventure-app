@@ -1,0 +1,90 @@
+{
+  "problems": [
+    {
+      "id": "p1",
+      "a": 7,
+      "b": 8,
+      "op": "\u00d7",
+      "answer": 56
+    },
+    {
+      "id": "p2",
+      "a": 45,
+      "b": 9,
+      "op": "\u00f7",
+      "answer": 5
+    },
+    {
+      "id": "p3",
+      "a": 128,
+      "b": 64,
+      "op": "\u00f7",
+      "answer": 2
+    },
+    {
+      "id": "p4",
+      "a": 36,
+      "b": 27,
+      "op": "\u2212",
+      "answer": 9
+    },
+    {
+      "id": "p5",
+      "a": 12,
+      "b": 14,
+      "op": "+",
+      "answer": 26
+    },
+    {
+      "id": "p6",
+      "a": 9,
+      "b": 6,
+      "op": "\u00d7",
+      "answer": 54
+    },
+    {
+      "id": "p7",
+      "a": 81,
+      "b": 9,
+      "op": "\u00f7",
+      "answer": 9
+    },
+    {
+      "id": "p8",
+      "a": 13,
+      "b": 7,
+      "op": "+",
+      "answer": 20
+    },
+    {
+      "id": "p9",
+      "a": 100,
+      "b": 25,
+      "op": "\u00f7",
+      "answer": 4
+    },
+    {
+      "id": "p10",
+      "a": 5,
+      "b": 18,
+      "op": "+",
+      "answer": 23
+    },
+    {
+      "id": "w1",
+      "wording": "Liam reads 12 pages on Monday and 15 on Tuesday. How many pages in total?",
+      "a": 12,
+      "b": 15,
+      "op": "+",
+      "answer": 27
+    },
+    {
+      "id": "w2",
+      "wording": "A box holds 8 cupcakes. You have 6 boxes. How many cupcakes?",
+      "a": 8,
+      "b": 6,
+      "op": "\u00d7",
+      "answer": 48
+    }
+  ]
+}
